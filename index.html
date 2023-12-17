@@ -1,35 +1,395 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 6.7px 0.0px; font: 12.0px Arial; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;HTML&gt;</span></p>
-<p class="p1"><span class="s1">&lt;HEAD&gt;</span></p>
-<p class="p1"><span class="s1">&lt;TITLE&gt;Your Title Here&lt;/TITLE&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/HEAD&gt;</span></p>
-<p class="p1"><span class="s1">&lt;BODY BGCOLOR="FFFFFF"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;CENTER&gt;&lt;IMG SRC="clouds.jpg" ALIGN="BOTTOM"&gt; &lt;/CENTER&gt;</span></p>
-<p class="p1"><span class="s1">&lt;HR&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="http://somegreatsite.com"&gt;Link Name&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1">is a link to another nifty site</span></p>
-<p class="p1"><span class="s1">&lt;H1&gt;This is a Header&lt;/H1&gt;</span></p>
-<p class="p1"><span class="s1">&lt;H2&gt;This is a Medium Header&lt;/H2&gt;</span></p>
-<p class="p1"><span class="s1">Send me mail at &lt;a href="mailto:support@yourcompany.com"&gt;</span></p>
-<p class="p1"><span class="s1">support@yourcompany.com&lt;/a&gt;.</span></p>
-<p class="p1"><span class="s1">&lt;P&gt; This is a new paragraph!</span></p>
-<p class="p1"><span class="s1">&lt;P&gt; &lt;B&gt;This is a new paragraph!&lt;/B&gt;</span></p>
-<p class="p1"><span class="s1">&lt;BR&gt; &lt;B&gt;&lt;I&gt;This is a new sentence without a paragraph break, in bold italics.&lt;/I&gt;&lt;/B&gt;</span></p>
-<p class="p1"><span class="s1">&lt;HR&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/BODY&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/HTML&gt;</span></p>
-</body>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Find My Car App is the best app to find your parked car">
+        <meta name="author" content="Bello Studios">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144229953-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144229953-1');
+</script>
+
+        <title>Spirit Talker | EMF Bello Studios</title>
+        
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+		
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Elegant Font Icons CSS -->
+        <link rel="stylesheet" href="css/elegant-font-icons.css">
+        <!-- Elegant Line Icons CSS -->
+        <link rel="stylesheet" href="css/elegant-line-icons.css">
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Slicknav CSS -->
+        <link rel="stylesheet" href="css/slicknav.min.css">
+        <!-- animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- OWL-Carousel CSS -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="css/swiper.min.css">
+		<!-- Main CSS -->
+        <link rel="stylesheet" href="css/main.css">
+		<!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target="#navmenu" data-offset="70">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div id='preloader' >
+            <div class='loader' >
+                <div class="battery"></div>
+            </div>
+        </div><!-- Preloader -->
+        
+        <header id="header" class="header-section">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="#" class="navbar-brand"><img src="img/logo.png" alt="Astra"></a>
+                    <div class="d-flex menu-wrap">
+                       <div id="navmenu" class="mainmenu">
+                           <ul class="nav">
+                                <li ><a data-scroll class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a></li>
+                                <li><a data-scroll class="nav-link" href="#features">Features</a></li>
+                                <li><a data-scroll class="nav-link" href="#screenshots">Screenshots</a></li>
+                                <li><a data-scroll class="nav-link" href="#reviews">Reviews</a></li>
+                                <li><a data-scroll class="nav-link" href="#download">Download</a></li>
+                            </ul>
+                       </div>
+                    </div>
+                </nav>
+            </div>
+		</header> <!-- Header Section -->  
+		
+		<section id="home" class="hero-section">
+		    <div class="container">
+		    	<div class="hero-inner text-center">
+                    <div class="hero-content">
+                        <h1>Bello Studios <br> SPIRIT TALKER</h1>
+                        <p>Spirit Talker app is the easy and best option to get to your parked car.</p>
+                        <div class="hero-btn">
+                            <a href="https://apps.apple.com/us/app/find-my-car-with-ar-tracker/id1065080375" class="download-btn"><img src="img/appstore.png" alt="Radiation Detector"></a>
+                            
+                        </div>
+                    </div>
+		    	</div>
+		    </div>
+		</section><!-- Hero Section -->
+		
+        <section id="features" class="feature-section bd-bottom padding">
+            <div class="container">
+                <div class="feature-mock"></div>
+                <div class="row feature-wrap">
+                    <div class="col-md-4 text-right feature-list col-sm-6 xs-padding">
+                        <div class="feature-content wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
+                            <div class="icon"><i class="icon-layers"></i></div>
+		                    <h3>Great Interface</h3>
+		                    <p>Very useful features with an advanced design.<br>Features screen to configure preferences.</p>
+                        </div>
+                        <div class="feature-content wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
+                            <div class="icon"><i class="icon-heart"></i></div>
+		                    <h3>Made With Love</h3>
+		                    <p>Our product is created to improve our daily lives<br>Helping to enhance for a better world.</p>
+                        </div> <!-- Item-2 -->
+                    </div>
+                    <div class="col-md-4 offset-md-4 feature-list col-sm-6 xs-padding">
+                        <div class="feature-content wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
+                            <div class="icon"><i class="icon-adjustments"></i></div>
+		                    <h3>Easy To Manage</h3>
+		                    <p>The bluetooth feature event, from your radio car, triggers disconnection and saves your current location.</p>
+                        </div>
+                        <div class="feature-content wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+                            <div class="icon"><i class="icon-clock"></i></div>
+		                    <h3>Support</h3>
+		                    <p>Send us an email to receive support.<br>See contact email at <a href="https://apps.apple.com/us/app/find-my-car-with-ar-tracker/id1065080375">Apple Store app product.</a></p>
+                        </div> <!-- Item-2 -->
+                    </div>
+                </div>
+                <div class="row sponsor-wrap mt-30 text-center">
+                    <div class="col-md-10 offset-md-1">
+                        <ul>
+                           <li><img src="img/sponsor-2.png" alt="sponsor"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Feature Section -->
+        
+        <section class="content-section bg-grey bd-bottom padding">
+            <div class="container">
+                <div class="row content-wrap">
+                    <div class="col-md-6 xs-padding wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
+                        <div class="content-details">
+                            <h2>Easy To Use Friendly Interface.</h2>
+                            <p class="mb-30">Open Spirit Talker application and save your car, hotel or other position on the map and associate a short description.
+It will be much easier to find the place where you parked your car, or where is your hotel or whatever place you need to remember.
+In a simple and intuitive way, the application offers accuracy and speed on your return to your original location.</p>
+                            <a href="https://apps.apple.com/us/app/find-my-car-with-ar-tracker/id1065080375" class="default-btn">Download App</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 xs-padding wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
+                        <img src="img/content-bg.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section><!-- Content Section -->
+        
+        <section id="works" class="how-it-works-section bd-bottom padding">
+            <div class="container">
+                <div class="how-wrap row">
+                    <div class="col-md-4 col-sm-6 xs-padding wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1000ms">
+                        <div class="how-content text-center">
+                            <i class="icon-anchor"></i>
+                            <h3>Step out the car</h3>
+                            <p>Save your current location. Otherwise it will be saved when the event radio bluetooth disconnection occurs.</p>
+                        </div>
+                        <div class="arrow"></div>
+                    </div><!-- Item-1 -->
+                    <div class="col-md-4 col-sm-6 xs-padding wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                        <div class="how-content text-center">
+                            <i class="icon-adjustments"></i>
+                            <h3>Go wherever you need</h3>
+                            <p>Do not worry trying to remember where is parked your car.</p>
+                        </div>
+                        <div class="arrow"></div>
+                    </div><!-- Item-1 -->
+                    <div class="col-md-4 col-sm-6 xs-padding wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                        <div class="how-content text-center">
+                            <i class="icon-happy"></i>
+                            <h3>Open the app and Click on Find Last Saved Location</h3>
+                            <p>Your shortest path will show up<br>Also you can use the augmented reality feature.</p>
+                        </div>
+                    </div><!-- Item-3 -->
+                </div>
+            </div>
+        </section><!-- How It Works Section -->        		  		  
+        
+		<section id="screenshots" class="screenshots-section bd-bottom bg-grey padding">
+		    <div class="container">
+		        <div class="section-heading mb-60 text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1000ms">
+		            <h2>Screenshots</h2>
+		            <p>Demo screens examples of Spirit Talker app.</p>
+		        </div>
+		         <div class="swiper-container">
+                    <div class="mobile-mock">
+                        <div class="screen"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        	<img class="w-100" src="img/screenshot01.png" alt="screenshot Spirit Talker">
+                        </div>
+                        <div class="swiper-slide">
+                        	<img class="w-100" src="img/screenshot02.png" alt="screenshot Spirit Talker Menu">
+                        </div>
+                        <div class="swiper-slide">
+                        	<img class="w-100" src="img/screenshot03.png" alt="screenshot Augmented reality">
+                        </div>
+                        <div class="swiper-slide">
+                        	<img class="w-100" src="img/screenshot04.png" alt="screenshot Spirit Talker easy">
+                        </div>
+                        <div class="swiper-slide">
+                        	<img class="w-100" src="img/screenshot05.png" alt="screenshot">
+                        </div>
+                        <div class="swiper-slide">
+                        	<img class="w-100" src="img/screenshot06.png" alt="screenshot">
+                        </div>
+                        <div class="swiper-slide">
+                        	<img class="w-100" src="img/screenshot07.png" alt="screenshot">
+                        </div>
+                        <div class="swiper-slide">
+                        	<img class="w-100" src="img/screenshot08.png" alt="screenshot">
+                        </div>
+                    </div>
+                    <!-- Carousel Arrows -->
+				    <div class="swiper-next"><i class=" arrow_carrot-right"></i></div>
+				    <div class="swiper-prev"><i class=" arrow_carrot-left"></i></div>
+                </div>
+		    </div>
+		</section><!-- Screenshots Section -->
+		
+		<section id="team" class="team-section bd-bottom padding">
+		    <div class="container">
+                <div class="section-heading mb-60 text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1000ms">
+		            <h2>Members team</h2>
+		            <p>Inspired and focused on our best app product, we used our skills in different positions and <br>were encouraged to achieve our best goal.</p>
+		        </div>
+		        <div class="row">
+		            <div class="col-md-3 col-sm-6 xs-padding wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1000ms">
+		                <div class="team-box text-center">
+                            <div class="team-thumb">
+                                <img src="img/team-1.jpg" alt="img">
+                            </div>
+		                    <div class="team-content">
+		                        <h3>Jennifer Brown</h3>
+		                        <span>Marketer</span>
+		                    </div>
+		                </div>
+		            </div><!-- Team-1 -->
+		            <div class="col-md-3 col-sm-6 xs-padding wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+		                <div class="team-box text-center">
+                            <div class="team-thumb">
+                                <img src="img/team-2.jpg" alt="img">
+                            </div>
+		                    <div class="team-content">
+		                        <h3>John Everton</h3>
+		                        <span>Developer</span>
+		                    </div>
+		                </div>
+		            </div><!-- Team-1 -->
+		            <div class="col-md-3 col-sm-6 xs-padding wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+		                <div class="team-box text-center">
+                            <div class="team-thumb">
+                                <img src="img/team-2.jpg" alt="img">
+                            </div>
+		                    <div class="team-content">
+		                        <h3>Jose Martin</h3>
+		                        <span>Developer</span>
+		                    </div>
+		                </div>
+		            </div><!-- Team-3 -->
+		            <div class="col-md-3 col-sm-6 xs-padding wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1000ms">
+		                <div class="team-box text-center">
+                            <div class="team-thumb">
+                                <img src="img/team-4.jpg" alt="img">
+                            </div>
+		                    <div class="team-content">
+		                        <h3>Veera Johnson</h3>
+		                        <span>Lab tester</span>
+		                    </div>
+		                </div>
+		            </div><!-- Team-4 -->
+		        </div>
+		    </div>
+		</section><!-- Team Section -->
+		
+		<section id="reviews" class="review-section bg-gradiant padding">
+            <div class="container">
+                <div class="section-heading mb-60 text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1000ms">
+                    <h2>User Reviews</h2>
+                    <p>This reviews can be read at the Apple Store, exactly as it is written here.</p>
+                </div>
+                <div id="review-carousel" class="review-carousel owl-carousel">
+                    <div class="review-item">
+                        <div class="review-thumb">
+                           <img src="img/userreview.jpg" alt="thumb">
+                        </div>
+                        <div class="review-content">
+                            <h3>Mrs Yvette</h3>
+                            <ul class="rattings">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <div class="review-text">
+                                <p><b>02/04/2019  Cool Useful App!</b><br>"My work parking lot is the size of 2 football fields and it’s so easy to forget where you’ve parked’m using it and not continuously."</p>
+                            </div>
+                        </div>
+                    </div><!-- Reviews-1 -->
+                    <div class="review-item">
+                        <div class="review-thumb">
+                           <img src="img/userreview.jpg" alt="thumb">
+                        </div>
+                        <div class="review-content">
+                            <h3>Jessica Lange80</h3>
+                            <ul class="rattings">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <div class="review-text">
+                                <p><b>02/07/2019  Very useful to get back to my parking</b><br>
+                                   "It’s really a ‘must have’ app to everyone who needs to park around everyday. It”s amazing that it saves the image where your location is. It’s easy to remember."</p>
+                            </div>
+                        </div>
+                    </div><!-- Reviews-2 -->
+                    <div class="review-item">
+                        <div class="review-thumb">
+                           <img src="img/userreview.jpg" alt="thumb">
+                        </div>
+                        <div class="review-content">
+                            <h3>GBC98</h3>
+                            <ul class="rattings">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <div class="review-text">
+                                <p><b>14/07/2018 Superb auto parking locator!</b><br>"Highly recommended. Does exactly whay you wish it should do."</p>
+                            </div>
+                        </div>
+                    </div><!-- Reviews-3 -->
+                </div>
+            </div>
+        </section><!-- Reviews Section -->
+       
+       
+        <section id="download" class="download-section padding">
+            <div class="container">
+                <div class="download-content text-center">
+                    <h2 class="wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1000ms">Instructions and Tests</h2>
+                    <p class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/46Z2YlVrN0M"> </iframe>
+                    </p>
+                    
+                    <p class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">Enjoy the 3D maps. It allows you to find your car parked. Parking location is saved automatically. <br>Now your radio car bluetooth triggers an event to save your location..</p>
+                    <div class="hero-btn wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                        <a href="https://apps.apple.com/us/app/find-my-car-with-ar-tracker/id1065080375" class="download-btn"><img src="img/appstore.png" alt="download Electromagnetic Radiation EMF "></a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Download Section -->
+        
+      	    
+		<footer class="footer-section align-center">
+			<div class="container">
+				<p>&copy; 2019 Bello Studios</p>
+			</div>
+		</footer><!-- /.footer_section -->
+
+		<a data-scroll href="#header" id="scroll-to-top"><i class="arrow_carrot-up"></i></a>
+	
+		<!-- jQuery Lib -->
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+		<!-- Tether JS -->
+		<script src="js/vendor/tether.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<!-- Slicknav JS -->
+		<script src="js/vendor/jquery.slicknav.min.js"></script>
+		<!-- OWL-Carousel JS -->
+		<script src="js/vendor/owl.carousel.min.js"></script>
+		<!-- Swiper JS -->
+		<script src="js/vendor/swiper.min.js"></script>
+		<!-- Smooth Scroll JS -->
+		<script src="js/vendor/smooth-scroll.min.js"></script>
+		<!-- Ajaxchimp JS -->
+		<script src="js/vendor/jquery.ajaxchimp.min.js"></script>
+		<!-- Wow JS -->
+		<script src="js/vendor/wow.min.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+
+    </body>
 </html>
