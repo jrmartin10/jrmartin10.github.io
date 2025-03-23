@@ -19,9 +19,9 @@ export const config = {
     
     // Slider titles
     sliderTitles: [
+        "@Paranormal_Parkour",
         "@bellostudios",
         "Shorts - Spirit Evidences",
-        "AI Shorts",
-        "@Paranormal_Parkour"
+        "AI Shorts"
     ]
 };

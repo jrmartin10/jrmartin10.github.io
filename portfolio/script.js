@@ -37,8 +37,14 @@ function applyConfigSettings() {
 
 function initPortfolioSliders() {
     const sliders = document.querySelectorAll('.slider');
+    const sliderTitles = [
+        "@Paranormal_Parkour (swipe right →)",
+        "@bellostudios",
+        "Shorts - Spirit Evidences",
+        "AI Shorts"
+    ];
     
-    sliders.forEach(slider => {
+    sliders.forEach((slider, index) => {
         let isDown = false;
         let startX;
         let scrollLeft;
@@ -130,6 +136,11 @@ function initPortfolioSliders() {
 
         // Add fade effect on the edges
         addSliderFadeEffect(slider);
+        
+        // Adding title to the slider
+        const titleElement = document.createElement('h2');
+        titleElement.textContent = sliderTitles[index];
+        slider.parentNode.insertBefore(titleElement, slider);
     });
 }
 
@@ -176,25 +187,42 @@ function initYoutubeEmbeds() {
     thumbnails.forEach(thumbnail => {
         thumbnail.addEventListener('click', () => {
             const imgUrl = thumbnail.style.getPropertyValue('--img-url');
-            const videoId = imgUrl.match(/\/vi\/([^\/]+)\/hqdefault/)[1];
             
-            // Handle all video IDs properly
-            if (videoId === 'Uc-yMCxC8Jc' || videoId === '_Ov_ttEL9gs' || 
-                videoId === 'Oj0jTBaXRdA' || videoId === 'sKa1t0PI0aE' || 
-                videoId === 'IPOxFBvYaw8' || videoId === 'ZnIj6FNUJWI' ||
-                videoId === 'aX1q6DawdVI' || videoId === 'Vdpr9qBEFrQ' ||
-                videoId === 'UCxFdfRCx7s' || videoId === '1aFm6mBPxZg' ||
-                videoId === 'aFD4JoY-r9U' || videoId === 'GTR1lNKv6YI' ||
-                videoId === 'A7tz3M9FnmI' || videoId === 'a5SNGYoA6oA' ||
-                videoId === 'QpHH3Yitx0c' || videoId === 'DSWnd_vtUGg' ||
-                videoId === '7PGdGkYynC8' || videoId === '-vP1dfR7GEg' ||
-                videoId === 'bUUbPFCjzPM' || videoId === 'HspHWG4LhP4' ||
-                videoId === 'mhGKxIWYzXo' || videoId === '39KH-WBaKdI' ||
-                videoId === 'bsOL1osZpA0' || videoId === 'aZyA819cRWM' ||
-                videoId === 'Tz62JJCowWA') {
-                youtubeIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            // Check if this is a regular YouTube video ID format
+            const videoIdMatch = imgUrl.match(/\/vi\/([^\/]+)\/hqdefault/);
+            
+            if (videoIdMatch) {
+                const videoId = videoIdMatch[1];
+                
+                // Check for all known video IDs including the new ones
+                if (videoId === 'Uc-yMCxC8Jc' || videoId === '_Ov_ttEL9gs' || 
+                    videoId === 'Oj0jTBaXRdA' || videoId === 'sKa1t0PI0aE' || 
+                    videoId === 'IPOxFBvYaw8' || videoId === 'ZnIj6FNUJWI' ||
+                    videoId === 'aX1q6DawdVI' || videoId === 'Vdpr9qBEFrQ' ||
+                    videoId === 'UCxFdfRCx7s' || videoId === '1aFm6mBPxZg' ||
+                    videoId === 'aFD4JoY-r9U' || videoId === 'GTR1lNKv6YI' ||
+                    videoId === 'A7tz3M9FnmI' || videoId === 'a5SNGYoA6oA' ||
+                    videoId === 'QpHH3Yitx0c' || videoId === 'DSWnd_vtUGg' ||
+                    videoId === '7PGdGkYynC8' || videoId === '-vP1dfR7GEg' ||
+                    videoId === 'bUUbPFCjzPM' || videoId === 'HspHWG4LhP4' ||
+                    videoId === 'mhGKxIWYzXo' || videoId === '39KH-WBaKdI' ||
+                    videoId === 'bsOL1osZpA0' || videoId === 'aZyA819cRWM' ||
+                    videoId === 'Tz62JJCowWA' || videoId === 'xBT4Isc0ySw' ||
+                    videoId === 'EHv1XjXh5FE' || videoId === 'rbBvfET05Lc' || 
+                    videoId === 'OMSnm2225Jk' || videoId === 'UVsTIHff3rM' || 
+                    videoId === 'c_QM8nheubI') {
+                    youtubeIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                } else {
+                    youtubeIframe.src = config.youtubeEmbedUrl;
+                }
             } else {
-                youtubeIframe.src = config.youtubeEmbedUrl;
+                // For videos that might use a direct embed URL format
+                const directMatch = imgUrl.match(/\/([^\/]+)\/hqdefault/);
+                if (directMatch && directMatch[1]) {
+                    youtubeIframe.src = `https://www.youtube.com/embed/${directMatch[1]}?autoplay=1`;
+                } else {
+                    youtubeIframe.src = config.youtubeEmbedUrl;
+                }
             }
             
             youtubeEmbed.classList.add('active');
