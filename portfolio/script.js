@@ -38,7 +38,7 @@ function applyConfigSettings() {
 function initPortfolioSliders() {
     const sliders = document.querySelectorAll('.slider');
     const sliderTitles = [
-        "@Paranormal_Parkour (swipe right →)",
+        "@Paranormal_Parkour",
         "@bellostudios",
         "Shorts - Spirit Evidences",
         "AI Shorts"
