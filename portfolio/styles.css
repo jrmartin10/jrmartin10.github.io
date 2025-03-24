@@ -9,8 +9,8 @@
     --thumbnail-height: 200px;
     --thumbnail-gap: 20px;
     --border-radius: 8px;
-    --type-c-width: 130px;
-    --type-c-height: 94px;
+    --type-c-width: 160px;
+    --type-c-height: 120px;
 }
 
 * {
@@ -39,7 +39,7 @@ body {
 h1 {
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-color);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -111,13 +111,13 @@ h1 {
 }
 
 .overlay h3 {
-    font-size: 1.2rem;
+    font-size: 0.6rem;
     margin-bottom: 0.3rem;
     color: var(--text-color);
 }
 
 .overlay p {
-    font-size: 0.9rem;
+    font-size: 0.45rem;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -166,7 +166,7 @@ h1 {
 }
 
 .slider-title {
-    font-size: 10px;
+    font-size: 5px;
     text-align: left;
     margin-bottom: 0.5rem;
     font-weight: 600;
@@ -179,7 +179,7 @@ h1 {
 .thumbnail-title {
     text-align: center;
     margin-top: 8px;
-    font-size: 0.9rem;
+    font-size: 0.45rem;
     font-weight: 500;
     color: var(--text-color);
 }
@@ -231,7 +231,7 @@ h1 {
 }
 
 .community-title {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     background: linear-gradient(45deg, #fff, #a5c4e8);
     -webkit-background-clip: text;
@@ -306,6 +306,24 @@ h1 {
     cursor: pointer;
 }
 
+.intro-text {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
 @media (max-width: 768px) {
     :root {
         --thumbnail-width: 250px;
@@ -313,7 +331,7 @@ h1 {
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
 
@@ -325,6 +343,6 @@ h1 {
     }
     
     h1 {
-        font-size: 1.8rem;
+        font-size: 0.9rem;
     }
 }

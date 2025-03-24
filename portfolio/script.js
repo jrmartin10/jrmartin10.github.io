@@ -37,9 +37,9 @@ function applyConfigSettings() {
 
 function initPortfolioSliders() {
     const sliders = document.querySelectorAll('.slider');
-    const sliderTitles = [
+    const sliderTitles = config.sliderTitles || [
         "@Paranormal_Parkour",
-        "@bellostudios",
+        "@bellostudios-apps",
         "Shorts - Spirit Evidences",
         "AI Shorts"
     ];
@@ -244,7 +244,7 @@ function initTypeCItems() {
     typeCItems.forEach(item => {
         item.addEventListener('click', () => {
             const imgUrl = item.style.getPropertyValue('--img-url');
-            typeCModalContent.src = imgUrl.replace('url(', '').replace(')', '').replace(/"/g, '');
+            typeCModalContent.src = imgUrl.replace('url(', '').replace(')', '').replace(/"/g, '').replace(/'/g, '');
             typeCModal.classList.add('active');
         });
     });
@@ -261,7 +261,7 @@ function initScrollIndicators() {
         indicator.addEventListener('click', () => {
             const slider = indicator.previousElementSibling.querySelector('.slider');
             const thumbnailWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--thumbnail-width'));
-            const thumbnailGap = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--thumbnail-gap'));
+            const thumbnailGap = parseInt(getComputedStyle(document.documentElement).GetPropertyValue('--thumbnail-gap'));
             
             // Scroll by approximately one thumbnail width plus gap
             slider.scrollBy({

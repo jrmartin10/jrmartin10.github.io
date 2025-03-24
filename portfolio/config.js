@@ -14,14 +14,14 @@ export const config = {
     youtubeEmbedUrl: 'https://www.youtube.com/embed/eEACXNo-LXE',
     
     // Type C dimensions
-    typeCWidth: 130, // in pixels
-    typeCHeight: 94, // in pixels
+    typeCWidth: 160, // in pixels (updated to 4:3 ratio)
+    typeCHeight: 120, // in pixels (updated to 4:3 ratio),
     
     // Slider titles
     sliderTitles: [
         "@Paranormal_Parkour",
-        "@bellostudios",
+        "@bellostudios-apps",
         "Shorts - Spirit Evidences",
-        "AI Shorts"
+        "Whispers from Beyond"
     ]
 };
