@@ -259,9 +259,9 @@ function initScrollIndicators() {
     
     scrollIndicators.forEach(indicator => {
         indicator.addEventListener('click', () => {
-            const slider = indicator.previousElementSibling.querySelector('.slider');
+            const slider = indicator.previousElementSibling;
             const thumbnailWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--thumbnail-width'));
-            const thumbnailGap = parseInt(getComputedStyle(document.documentElement).GetPropertyValue('--thumbnail-gap'));
+            const thumbnailGap = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--thumbnail-gap'));
             
             // Scroll by approximately one thumbnail width plus gap
             slider.scrollBy({
