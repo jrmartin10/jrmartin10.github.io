@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     applyConfigSettings();
     initYoutubeEmbeds();
     initTypeCItems();
-    initScrollIndicators();
 });
 
 function applyConfigSettings() {
@@ -41,7 +40,7 @@ function initPortfolioSliders() {
         "@Paranormal_Parkour",
         "@bellostudios-apps",
         "Shorts - Spirit Evidences",
-        "AI Shorts"
+        "Whispers from Beyond"
     ];
     
     sliders.forEach((slider, index) => {
@@ -118,18 +117,8 @@ function initPortfolioSliders() {
             });
         }, { passive: false }); // Important for iOS
 
-        // Hide scroll indicator when user starts scrolling
+        // Hide scroll indicator when user starts scrolling - removed since indicators are gone
         slider.addEventListener('scroll', () => {
-            const scrollIndicator = slider.nextElementSibling;
-            if (scrollIndicator && scrollIndicator.classList.contains('scroll-indicator')) {
-                scrollIndicator.style.opacity = '0';
-                
-                // Restore opacity after 3 seconds
-                setTimeout(() => {
-                    scrollIndicator.style.opacity = '0.7';
-                }, 3000);
-            }
-            
             // Update thumbnails appearance on scroll
             updateThumbnailsAppearance(slider);
         });
@@ -255,22 +244,5 @@ function initTypeCItems() {
 }
 
 function initScrollIndicators() {
-    const scrollIndicators = document.querySelectorAll('.scroll-indicator');
-    
-    scrollIndicators.forEach(indicator => {
-        indicator.addEventListener('click', () => {
-            const slider = indicator.previousElementSibling;
-            const thumbnailWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--thumbnail-width'));
-            const thumbnailGap = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--thumbnail-gap'));
-            
-            // Scroll by approximately one thumbnail width plus gap
-            slider.scrollBy({
-                left: thumbnailWidth + thumbnailGap,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Make the indicator visually clickable
-        indicator.style.cursor = 'pointer';
-    });
+    // Function content removed
 }
