@@ -100,6 +100,7 @@ input, select, textarea {
 
 	body {
 		background-color: #1e252d;
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3722,7 +3723,7 @@ input, select, textarea {
 					}
 
 				#nav ul.links li.active {
-					background-color: #ffffff;
+					background-color: #cecede;
 				}
 
 					#nav ul.links li.active a {
@@ -3756,7 +3757,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: #cecede;
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
@@ -4686,4 +4687,8 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+	
+
 	}
+
+		
