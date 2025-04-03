@@ -202,10 +202,10 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
+	
 	h2 {
-		font-size: 1.75rem;
+		font-size: 1.4rem;
 		line-height: 1.3;
-		margin: 0 0 1.5rem 0;
 	}
 
 	h3 {
@@ -3824,6 +3824,11 @@ input, select, textarea {
 
 			}
 
+			.post.featured h2 {
+				font-size: 1.7rem !important;
+				line-height: 1.3 !important;
+			}
+
 		#main > .posts {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -4690,5 +4695,41 @@ input, select, textarea {
 	
 
 	}
+	
+	
+/* Custom Grid Layout for Posts - Forzado para 4 columnas 
+.posts {
+	display: grid !important;
+	grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+	gap: 1.5rem !important;
+	width: 100%;
+  }
+  
+  .posts article {
+	width: auto !important;
+  }*/
+  /* Definición del nuevo elemento article4 para 4 columnas */
+article4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+	width: 100%;
+  }
+  
+  article5 {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1.5rem;
+	width: 100%;
+  }
 
-		
+  .post.featured {
+    margin-top: 0rem !important;
+    padding-top: 3rem !important;
+}
+
+.date {
+    margin-bottom: 0.2rem !important;
+    display: inline-block;
+}
+
