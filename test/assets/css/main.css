@@ -4733,3 +4733,65 @@ article4 {
     display: inline-block;
 }
 
+
+/* Estilos por defecto para article5 (pantallas grandes, por ejemplo, 3 columnas) */
+article5 {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr); /* Ajusta el número de columnas según lo necesites */
+	column-gap: 1rem;
+	row-gap: 0.5rem;  /* Espaciado vertical por defecto */
+  }
+  
+  /* Reseteo de márgenes y padding en cada grid item */
+  article5 > div {
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Primer div (contiene la imagen principal y los botones de descarga) */
+  article5 > div:first-child {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 0;  /* Elimina espacio extra que pueda generar el line-height */
+  }
+  
+  /* Reseteo de márgenes y padding en los enlaces dentro del primer div */
+  article5 > div:first-child a {
+	margin: 0 !important;
+	padding: 0 !important;
+	line-height: 0;
+  }
+  
+  /* Asegura que las imágenes se comporten como bloques */
+  article5 img {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+  /* Media queries para pantallas pequeñas */
+  
+  /* Para pantallas de 768px o menos: 2 columnas y un row-gap reducido */
+  @media screen and (max-width: 768px) {
+	article5 {
+	  grid-template-columns: repeat(2, 1fr);
+	  row-gap: 0.1rem; /* Muy poco espacio vertical entre filas */
+	}
+  }
+  
+  /* Para pantallas de 480px o menos: 1 columna */
+  @media screen and (max-width: 480px) {
+	article5 {
+	  grid-template-columns: 1fr;
+	  row-gap: 0.1rem;
+	}
+  }
+  .download-btn:hover{
+    opacity: 0.8;
+}
+  article5 > div:first-child a.download-btn:first-of-type {
+	display: block; /* Asegura que se trate como bloque */
+	margin-bottom: 0.2rem; /* Ajusta este valor para el espacio deseado */
+  }
+ 
